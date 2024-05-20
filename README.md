@@ -100,6 +100,7 @@ To add a language and kernel, you will need to modify and build the Dockerfile i
 - An install script that lets you choose which kernels to install
 - Polyglot notebooks
 - Fortran / PHP / Scala
+- Custom theme
 
 ## Credits
 
