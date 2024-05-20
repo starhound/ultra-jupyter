@@ -16,7 +16,7 @@ c.Authenticator.allowed_users = {'admin'}
 from dockerspawner import DockerSpawner
 c.JupyterHub.spawner_class = DockerSpawner
 c.DockerSpawner.image = 'ultra-jupyter-notebook'  # Use the custom user container image
-c.DockerSpawner.network_name = 'ultra-jupyter-network'  # Use the correct network name
+c.DockerSpawner.network_name = 'ultra-jupyterhub-network'  # Use the correct network name
 c.DockerSpawner.notebook_dir = '/home/jovyan/work'
 c.DockerSpawner.remove = True
 c.DockerSpawner.volumes = {
