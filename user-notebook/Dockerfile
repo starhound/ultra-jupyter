@@ -239,8 +239,19 @@ RUN python -m 'dyalog_kernel' install
 RUN pip install ansible-kernel
 RUN python -m ansible_kernel.install
 
+# Michelson
+RUN apt install libssl-dev zlib1g-dev uuid-dev
+RUN git clone https://github.com/baking-bad/michelson-kernel && \
+    cd michelson-kernel && \
+    make
+
+RUN pip install cwlkernel
+RUN pip install pygrype
+
 # Switch back to jovyan user
 USER ${NB_UID}
+
+RUN jupyter kernelspec list 
 
 # Ensure the default command is correct
 CMD ["start-notebook.sh"]

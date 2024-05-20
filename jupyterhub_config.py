@@ -3,7 +3,7 @@ c = get_config()
 # Set the JupyterHub bind URL
 c.JupyterHub.bind_url = 'http://:8005'
 c.JupyterHub.hub_ip = '0.0.0.0'
-c.JupyterHub.hub_connect_ip = 'jupyterhub'  # Use the service name in the Docker network
+c.JupyterHub.hub_connect_ip = 'ultra-jupyterhub'  # Use the service name in the Docker network
 
 # Configure authenticator (DummyAuthenticator for testing)
 from jupyterhub.auth import DummyAuthenticator
@@ -15,8 +15,8 @@ c.Authenticator.allowed_users = {'admin'}
 # Configure spawner
 from dockerspawner import DockerSpawner
 c.JupyterHub.spawner_class = DockerSpawner
-c.DockerSpawner.image = 'ultra-jupyter-notebook'  # Use the custom user container image
-c.DockerSpawner.network_name = 'ultra-jupyterhub-network'  # Use the correct network name
+c.DockerSpawner.image = 'starhound/ultra-jupyter-notebook'  # Use the custom user container image
+c.DockerSpawner.network_name = 'ultra-juypter_ultra-jupyterhub-network'  # Use the correct network name
 c.DockerSpawner.notebook_dir = '/home/jovyan/work'
 c.DockerSpawner.remove = True
 c.DockerSpawner.volumes = {

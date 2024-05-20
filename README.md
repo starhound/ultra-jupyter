@@ -43,7 +43,8 @@ Ultra-Jupyter is a pre-configured version of [JupyterHub](https://jupyter.org/hu
   - SetlX
   - Dyalog APL
   - Ansible 
-
+  - Michelson
+  - Common Workflow Language
 
 ![kernels](kernels.png)
 
@@ -126,5 +127,7 @@ Some notable projects that were used:
 - [isetlX](https://github.com/1b15/iSetlX)
 - [calysto_scheme](https://github.com/Calysto/calysto_scheme)
 - [almond](https://github.com/almond-sh/almond)
+- [michelson-kernel](https://github.com/baking-bad/michelson-kernel)
+- [common-workflow-language](https://github.com/giannisdoukas/CWLJNIKernel)
 
 many many more...
