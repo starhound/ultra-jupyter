@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  ultra-jupyterhub:
+    build: .
+    image: starhound/ultra-jupyter
+    container_name: ultra-jupyterhub
+    restart: always
+    ports:
+      - "8005:8005"
+    volumes:
+      - jupyterhub-data:/srv/jupyterhub
+      - ./jupyterhub_config.py:/etc/jupyterhub/jupyterhub_config.py
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - ultra-jupyterhub-network
+
+volumes:
+  ultra-jupyterhub-data:
+
+networks:
+  ultra-jupyterhub-network:
+    driver: bridge
