@@ -44,6 +44,9 @@ Ultra-Jupyter is a pre-configured version of [JupyterHub](https://jupyter.org/hu
   - Dyalog APL
   - Ansible 
 
+
+![kernels](kernels.png)
+
 ## Installation
 
 ### Prerequisites
