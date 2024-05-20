@@ -26,7 +26,7 @@ Ultra-Jupyter is a customized version of [JupyterHub](https://jupyter.org/hub) w
   - Octave
   - Lisp (Emacs)
   - Elm
-  - Erlang,
+  - Erlang
   - Elixir
   - LFE
   - Whitespace
@@ -48,8 +48,8 @@ Ultra-Jupyter is a customized version of [JupyterHub](https://jupyter.org/hub) w
 
 ### Prerequisites
 
-- Docker
-- Docker Compose (optional, for easier management)
+- [Docker](https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/) (optional, for easier management)
 
 Due to having so many language based dependencies, the Ultra-Jupyter-Notebook image equals over 15GB of storage. If you 
 plan on having many users on a server, keep note that each user will have
