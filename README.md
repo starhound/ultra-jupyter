@@ -1,6 +1,6 @@
 # Ultra-Jupyter
 
-Ultra-Jupyter is a customized version of [JupyterHub](https://jupyter.org/hub) with a custom notebook image that is pre-filled with several kernels, providing a boilerplate setup for multi-language support in Jupyter notebooks.
+Ultra-Jupyter is a customized version of [JupyterHub](https://jupyter.org/hub) with a custom notebook image that is pre-filled with several kernels, providing a boilerplate setup for easy deployment.
 
 ## Features
 - Pre-installed kernels for multiple programming languages including:
