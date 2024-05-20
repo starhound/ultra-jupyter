@@ -87,11 +87,12 @@ docker run -d -p 8888:8888 --name ultra-jupyter-notebook \
 ```
 
 Leave out the volume if you have no existing notebooks to bring in.
+
 ## Contributing 
 
 See your favorite kernel missing? Please reach out, or submit a PR!
 
-To add a language and kernel, you will beed to modify and build the Dockerfile in the user-notebook directory. This image takes a very long time to build, but caching makes it faster. Happy to take any advice on how to improve the build process.
+To add a language and kernel, you will need to modify and build the Dockerfile in the user-notebook directory. This image takes a very long time to build, but caching makes it faster. Happy to take any advice on how to improve the build process.
 
 ## TODO 
 
