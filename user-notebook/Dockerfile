@@ -239,14 +239,50 @@ RUN python -m 'dyalog_kernel' install
 RUN pip install ansible-kernel
 RUN python -m ansible_kernel.install
 
-# Michelson
-RUN apt install libssl-dev zlib1g-dev uuid-dev
-RUN git clone https://github.com/baking-bad/michelson-kernel && \
-    cd michelson-kernel && \
-    make
+# Dot
+RUN apt-get install graphviz libann0 libcdt5 libcgraph6 libgts-0.7-5 libgts-bin libgvc6 libgvpr2 liblab-gamut1 libpathplan4
+RUN pip install dot_kernel
+RUN install-dot-kernel
 
+# Common Workflow Language
+RUN pip3 install cwltool
 RUN pip install cwlkernel
-RUN pip install pygrype
+
+# CircuitPython
+RUN git clone https://github.com/adafruit/circuitpython_jupyter_kernel && \
+    cd circuitpython_jupyter_kernel && \
+    python3 setup.py install && \
+    python3 -m circuitpython_kernel.install
+
+# Fortran 
+RUN apt install gfortran
+
+RUN git clone https://github.com/ZedThree/jupyter-fortran-kernel && \
+    cd jupyter-fortran-kernel && \
+    pip install -e . && \
+    jupyter-kernelspec install fortran_spec/
+
+# Elasticsearch 
+RUN pip3 install elasticsearch_kernel
+RUN python3 -m elasticsearch_kernel.install
+
+# Forth
+RUN apt install gforth gforth-common gforth-lib
+RUN git clone https://github.com/sohang3112/iforth && \
+    cd iforth && \
+    pip install -e . && \
+    jupyter kernelspec install ./kernelspec --user
+
+# ARM
+RUN pip install arm-jupyter-kernel
+RUN python -m arm_kernel.install
+
+# Poetry
+RUN apt install pipx -y
+RUN pipx install poetry
+RUN pip3 install --user poetry-kernel
+RUN poetry init -n
+RUN poetry add ipykernel
 
 # Switch back to jovyan user
 USER ${NB_UID}

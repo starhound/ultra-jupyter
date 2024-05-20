@@ -45,6 +45,12 @@ Ultra-Jupyter is a pre-configured version of [JupyterHub](https://jupyter.org/hu
   - Ansible 
   - Michelson
   - Common Workflow Language
+  - Dot
+  - CircuitPython
+  - Fortran
+  - Forth
+  - Poetry
+  - Elasticsearch
 
 ![kernels](kernels.png)
 
@@ -129,5 +135,11 @@ Some notable projects that were used:
 - [almond](https://github.com/almond-sh/almond)
 - [michelson-kernel](https://github.com/baking-bad/michelson-kernel)
 - [common-workflow-language](https://github.com/giannisdoukas/CWLJNIKernel)
+- [jupyter-dot-kernel](https://github.com/laixintao/jupyter-dot-kernel)
+- [jupyter-fortran-kernel](https://github.com/ZedThree/jupyter-fortran-kernel/)
+- [elasticsearch-kernel](https://github.com/Hourout/elasticsearch_kernel)
+- [iForth](https://github.com/sohang3112/iforth)
+- [poetry-kernel](https://github.com/pathbird/poetry-kernel)
+
 
 many many more...
