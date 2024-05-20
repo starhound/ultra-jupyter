@@ -70,7 +70,7 @@ The install script simply ensures docker is installed and pulls the two containe
 ## Usage
 
 After running `docker-compose up`, you can access the JupyterHub interface at `http://localhost:8005`. By default, dummy authorization is configured for `admin` with a password of `admin`. You can change this by modifying the `jupyterhub_config.py` file to fit your configuration needs. More
-information about authorization can be found (here)[https://jupyterhub.readthedocs.io/en/stable/reference/authenticators.html].
+information about authorization can be found [here](https://jupyterhub.readthedocs.io/en/stable/reference/authenticators.html).
 
 ### Ultra-Jupyter-Notebook
 
