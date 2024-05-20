@@ -83,6 +83,7 @@ docker run -d -p 8888:8888 --name ultra-jupyter-notebook \
   starhound/ultra-jupyter-notebook
 ```
 
+Leave out the volume if you have no existing notebooks to bring in.
 ## Contributing 
 
 See your favorite kernel missing? Please reach out, or submit a PR!
